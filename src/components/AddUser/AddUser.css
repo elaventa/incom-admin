@@ -1,0 +1,60 @@
+.adduser {
+  margin-top: 15px;
+}
+
+.adduser input {
+  outline: none;
+  border: 1px solid #00000030;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.adduser .btn {
+  background-color: #c5d3ff;
+}
+
+.adminList {
+  margin-top: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+}
+
+.adminList ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.adminList .true {
+  background-color: #d5ccf37e;
+}
+
+.adminList .each-admin-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+  min-width: 25%;
+  border: 1px solid #00000020;
+}
+
+.adminList .each-admin-container .delete {
+  color: #f56060;
+  cursor: pointer;
+}
+/*# sourceMappingURL=AddUser.css.map */

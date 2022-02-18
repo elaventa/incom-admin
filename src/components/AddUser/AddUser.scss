@@ -1,0 +1,55 @@
+.adduser{
+    margin-top: 15px;
+
+    input{
+        outline: none;
+        border: 1px solid #00000030;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .btn{
+        background-color: rgb(197, 211, 255);
+    
+    }
+}
+
+.adminList {
+    margin-top: 50px;
+    width: fit-content;
+    padding: 20px;
+
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .true{
+        background-color: #d5ccf37e;
+    }
+    .each-admin-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 10px; 
+        min-width: 25%;
+        border: 1px solid #00000020;
+
+
+        .delete{
+            color: rgb(245, 96, 96);
+            cursor: pointer;
+        }
+        
+    }
+
+
+}
+
+
+
+

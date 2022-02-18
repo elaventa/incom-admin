@@ -1,0 +1,20 @@
+.error-popup{
+    color: rgb(255, 0, 0);
+    background-color: rgb(253, 169, 169);
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+}
+
+.error-popup h1{
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+@media(max-width: 767px){
+    .error-popup h1{
+        font-size: 1rem;
+    }
+}
