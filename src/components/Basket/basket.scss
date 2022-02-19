@@ -1,0 +1,201 @@
+.form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    input{
+        width: 50%;
+        position: relative;
+        padding: 10px;
+        font-size: 18px;
+    }
+    textarea{
+        width: 50%;
+        position: relative;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .formControl{
+        position: relative;
+    }
+    label{
+        position: absolute;
+        top: -20px;
+        background-color: white;
+    }
+
+    .searchbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .searchBtn{
+            background-color: rgb(175, 164, 164);
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    }
+
+    .searchResults{
+        height: 30vh;
+        width: fit-content;
+        overflow-y: scroll;
+        
+        .result{
+            cursor: pointer;
+            padding: 0 20px;
+            margin: 5px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgba(212, 215, 245, 0.5);
+
+            &:hover{
+                background-color: rgb(190, 167, 245);
+            }
+            img{
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .coinsSelected{
+        width: 400px;
+        position: absolute;
+        right: 50px;
+        
+        .coin{
+            background-color: rgba(225, 200, 250, 0.596);
+            margin: 2px 0; 
+            padding: 0 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .coindet{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .percent{
+                width: 70px !important;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .submitbtn{
+        cursor: pointer;
+    }
+}
+
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card {
+      position: relative;
+      width: 30.3%;
+      margin: 15px;
+      box-shadow: 0 4px 11px 3px hsla(0, 0%, 75.3%, 0.288) !important;
+      .cardcol1{
+        .card-img{
+          width: 100%;
+          max-height: 200px;
+          object-fit: cover;
+        }
+        a{
+          color: #000;
+        }
+      }
+      .cardcol2{
+        padding: 10px;
+  
+        .coins{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            .coin{
+                background-color: rgba(221, 220, 220, 0.877);
+                padding: 10px;
+                margin: 10px 0;
+
+            }
+            .value{
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .status{
+          padding: 5px;
+          border-radius: 5px;
+          width: fit-content;
+          position: absolute;
+          top: 0px;
+          right: 10px;
+          color: #fff;
+        }
+  
+        .sponsered{
+          left: 10px;
+          top: 0;
+          padding: 5px;
+          border-radius: 5px;
+          width: fit-content;
+          position: absolute;
+          color: #fff;
+          &.open {
+            background-color: rgb(38, 87, 28);
+          }
+          &.close{
+            background-color: rgb(93, 131, 255);
+          }
+        }
+        .completed{
+          right: 10px;
+          bottom: 0px;
+          padding: 5px;
+          border-radius: 5px;
+          width: fit-content;
+          position: absolute;
+          color: #fff;
+  
+          &.open {
+            background-color: rgb(255, 218, 116);
+          }
+          &.close{
+            background-color: rgb(243, 134, 71);
+          }
+        }
+        .open {
+          background-color: green;
+        }
+        .close{
+          background-color: red;
+        }
+        a{
+          color: #000;
+        }
+  
+        .edit-delete-container{
+          display: flex;
+          align-self: flex-end;
+          flex-direction: row;
+          width: 100px;
+          align-items: center;
+          justify-content: space-between;
+  
+          .btn{
+            margin: 0 10px;
+          }
+        }
+  
+      }
+    }
+  
+  
+  }
+  

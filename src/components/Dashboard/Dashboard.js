@@ -6,6 +6,7 @@ import AddUser from "../AddUser/AddUser";
 import { useState } from "react";
 import { useEffect } from "react";
 import AddBasket from "../Basket/AddBasket";
+import Baskets from "../Basket/Baskets";
 
 const Dashboard = () => {
     const [isSuperAdmin, setisSuperAdmin] = useState(false)
@@ -51,6 +52,10 @@ const Dashboard = () => {
             path: "/dashboard/add-basket",
             main: () => <AddBasket />,
         },
+        {
+            path: "/dashboard/baskets",
+            main: () => <Baskets />,
+        },
     ];
     return (
         <div>
@@ -67,6 +72,9 @@ const Dashboard = () => {
                         <div className="nav">
                             <Link to="/dashboard/add-basket">
                                 <div className="nav-item">Add Basket </div>
+                            </Link>
+                            <Link to="/dashboard/baskets">
+                                <div className="nav-item">View All Baskets </div>
                             </Link>
 
                         </div>

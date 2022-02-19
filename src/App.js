@@ -1,5 +1,5 @@
  
-import { BrowserRouter as Router, Switch, Route ,Link, Redirect} from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 import { useState, useEffect } from "react";
 import Login from "./components/Login/Login";
 import Dashboard from "./components/Dashboard/Dashboard";
